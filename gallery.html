@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" href="gallery.css">
 
+
         <main class="main">
             <header class="header">
                 <a href="#" class="logo">Portfolio</a>
@@ -31,7 +32,7 @@
             </header>
     </head>
     <body>
-
+    
         <section class="last-kawaii" id="last-kawaii">
             
             <!-- cat-cake-slides -->
@@ -249,7 +250,7 @@
             </div>
         </section>
 
-        <section class="last-kawaii" id="last-kawaii">
+        <section class="arts-gallery" id="arts-gallery">
             
             <!-- cat-cake-slides -->
             <div class="last-kawaii-container">
@@ -257,38 +258,38 @@
                     <div class="last-kawaii-layer">
                         <div class="last-cute-container">
                             <!-- Full-width images with number text -->
-                            <div class="lastSlides" data-slide="cat-cake-slide">
+                            <div class="lastSlides" data-slide="birthday-cake-slide">
                                 <div class="numberlasttext">1 / 6</div>
-                                <img src="images/3Flowers.png" style="width:100%">
+                                <img src="images/BirthdayGroup.jpg" style="width:100%">
                             </div>
                         
-                            <div class="lastSlides" data-slide="cat-cake-slide">
+                            <div class="lastSlides" data-slide="birthday-cake-slide">
                                 <div class="numberlasttext">2 / 6</div>
-                                <img src="images/CarPlusArt.png" style="width:100%">
+                                <img src="images/Birthday-cake.jpg" style="width:100%">
                             </div>
                         
-                            <div class="lastSlides" data-slide="cat-cake-slide">
+                            <div class="lastSlides" data-slide="birthday-cake-slide">
                                 <div class="numberlasttext">3 / 6</div>
                                 <img src="images/RinaYeaMiko.png" style="width:100%">
                             </div>
                         
-                            <div class="lastSlides" data-slide="cat-cake-slide">
+                            <div class="lastSlides" data-slide="birthday-cake-slide">
                                 <div class="numberlasttext">4 / 6</div>
                                 <img src="images/AmyGenshin.png" style="width:100%">
                             </div>
-                            <div class="lastSlides" data-slide="cat-cake-slide">
+                            <div class="lastSlides" data-slide="birthday-cake-slide">
                                 <div class="numberlasttext">5 / 6</div>
                                 <img src="images/nilougenshin.png" style="width:100%">
                             </div>
-                            <div class="lastSlides" data-slide="cat-cake-slide">
+                            <div class="lastSlides" data-slide="birthday-cake-slide">
                                 <div class="numberlasttext">6 / 6</div>
                                 <img src="images/RandomGenshin.png" style="width:100%">
                             </div>
 
                         
                             <!-- Next and previous buttons -->
-                            <a class="l-prev" onclick="thirdChangeSlide(-1)">&#10094;</a>
-                            <a class="l-next" onclick="thirdChangeSlide(1)">&#10095;</a>
+                            <a class="l-prev" onclick="birthdayChangeSlide(-1)">&#10094;</a>
+                            <a class="l-next" onclick="birthdayChangeSlide(1)">&#10095;</a>
                         
                             <!-- Image text -->
                             <div class="last-caption-container">
@@ -298,22 +299,22 @@
                             <!-- Thumbnail images -->
                             <div class="l-row">
                                 <div class="l-column">
-                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="cat-cake-thumbnail" src="images/BriMagicGenshin.png" style="width:95%" onclick="thirdControlSelectSlide(1)" alt="Kokomi">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="birthday-cake-thumbnail" src="images/BirthdayGroup.jpg" style="width:95%" onclick="birthdayControlSelectSlide(1)" alt="Kokomi">
                                 </div>
                                 <div class="l-column">
-                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="cat-cake-thumbnail" src="images/CarPlusArt.png" style="width:90%" onclick="thirdControlSelectSlide(2)" alt="Genshin & Hoyoverse">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="birthday-cake-thumbnail" src="images/Birthday-cake.jpg" style="width:90%" onclick="birthdayControlSelectSlide(2)" alt="Genshin & Hoyoverse">
                                 </div>
                                 <div class="l-column">
-                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="cat-cake-thumbnail" src="images/RinaYeaMiko.png" style="width:100%" onclick="thirdControlSelectSlide(3)" alt="Yae Miko">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="birthday-cake-thumbnail" src="images/RinaYeaMiko.png" style="width:100%" onclick="birthdayControlSelectSlide(3)" alt="Yae Miko">
                                 </div>
                                 <div class="l-column">
-                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="cat-cake-thumbnail" src="images/AmyGenshin.png" style="width:92%" onclick="thirdControlSelectSlide(4)" alt="Clorinde">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="birthday-cake-thumbnail" src="images/AmyGenshin.png" style="width:92%" onclick="birthdayControlSelectSlide(4)" alt="Clorinde">
                                 </div>
                                 <div class="l-column">
-                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="cat-cake-thumbnail" src="images/nilougenshin.png" style="width:96%" onclick="thirdControlSelectSlide(5)" alt="Nilou">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="birthday-cake-thumbnail" src="images/nilougenshin.png" style="width:96%" onclick="birthdayControlSelectSlide(5)" alt="Nilou">
                                 </div>
                                 <div class="l-column">
-                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="cat-cake-thumbnail" src="images/RandomGenshin.png" style="width:114%" onclick="thirdControlSelectSlide(6)" alt="Arlecchino">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="birthday-cake-thumbnail" src="images/RandomGenshin.png" style="width:114%" onclick="birthdayControlSelectSlide(6)" alt="Arlecchino">
                                 </div>
                             </div>
                         </div>
@@ -477,5 +478,7 @@
             </div>
         </footer>
     </body>
+    <!-- custom js -->
+    <!-- <script src="portfilo.js"></script> -->
     <script src="gallery.js"></script>
 </html>

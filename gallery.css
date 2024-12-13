@@ -224,12 +224,24 @@ section {
 
 
   .last-kawaii-container {
-        display: flex;
+        /* display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1rem; */
+        position: relative;
+        width: 100%; /* Make it fully responsive */
+        max-width: 600px; /* Limit max size */
+        margin: auto;
+        overflow: hidden;
     }
+
+    /* maybe get rid of */
+    .last-kawaii .slide-container img {
+      width: 100%; /* Scale images to fit the container */
+      height: auto; /* Maintain aspect ratio */
+      display: block;
+  }
   
 
   .last-kawaii-container .last-kawaii-box {
@@ -248,212 +260,21 @@ section {
 
 .lastSlides img {
     width: 100%; /* Ensures the image takes up the full width of the slide */
-    height: 700px; /* Set a fixed height for uniformity */
+    height: auto; /* Set a fixed height for uniformity */
     object-fit: cover; /* Crops the image to fill the area without distortion */
     border-radius: 5px; /* Optional, for rounded edges */
 }
 
-  /* .lastSlides img {
-    width: 40%;
-  } */
-
-
-  /* kpop section */
-
-  /* profile grid */
-
-  .kpop-row {
-    margin: 8px -16px;
-  }
   
-  /* Add padding BETWEEN each column (if you want) */
-  .kpop-row,
-  .kpop-row > .kpop-column {
-    padding: 8px;
-  }
   
-  /* Create three equal columns that floats next to each other */
-  .kpop-column {
-    float: left;
-    width: 33.33%;
-    /* display: none; Hide columns by default */
-  }
   
-  /* Clear floats after rows */
-  .kpop-row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Content */
-  .content {
-    background-color: white;
-    padding: 10px;
-  }
-  
-  /* The "show" class is added to the filtered elements */
-  .show {
-    display: block;
-  }
-  
-  /* Style the buttons */
-  .kpop-btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: white;
-    cursor: pointer;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .kpop-btn:hover {
-    background-color: #ddd;
-  }
-  
-  /* Add a dark background color to the active button */
-  .kpop-btn.btn-active {
-    background-color: #666;
-     color: white;
-  }
-
-
-
-
-  
-/* Position the image container (needed to position the left and right arrows) */
-.gridContainer {
-    position: relative;
-    width: 500px;
-    margin: inherit;
-  }
-  
-  /* Hide the images by default */
-  .gridSlides {
-    display: none;
-    width: 500px;
-    margin: inherit;
-    
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor3 {
-    cursor: pointer;
-    width: 500px;
-    margin: inherit;
-  }
-  
-  /* Next & previous buttons */
-  .gridPrev,
-  .gridNext {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 14px;
-    margin-top: -40px;
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .gridNext {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-
-    /* Position the "prev button" to the left */
-
-  .gridPrev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .gridPrev:hover,
-  .gridNext:hover {
-    background-color: deeppink;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numberGrid {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .gridCaptionContainer {
-    text-align: center;
-    background-color: deeppink;
-    padding: 1px 16px;
-    color: white;
-  }
-  
-  .kpop1-row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .kpop1-column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .kpop1-demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .kpop1-demo:hover {
-    opacity: 1;
-  }
-
-
-  .gridCaption {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-  
-
-  .gridCaption .gridMain-box {
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 2rem deeppink;
-    overflow: hidden;
-    display: flex;
-    width: 500px;
-    /* margin: inherit; */
-    text-align: center;
-    left: 40%;
-    /* transform: translate(-10%, -281%); */
-    
-  }
-
-  .gridSlides img {
-    width: 40%;
-  }
-
 
 /* end of profile grid */
 
 /* Arts Gallery Section */
 
  /* Position the image container (needed to position the left and right arrows) */
- .arts-galleryP2-container {
+ .last-cute-container {
     position: relative;
     width: 500px;
     margin: inherit;
@@ -593,199 +414,7 @@ section {
     border-radius: 5px; /* Optional, for rounded edges */
 }
 
-  /* .lastSlides img {
-    width: 40%;
-  } */
-
-
-  /* kpop section */
-
-  /* profile grid */
-
-  .kpop-row {
-    margin: 8px -16px;
-  }
   
-  /* Add padding BETWEEN each column (if you want) */
-  .kpop-row,
-  .kpop-row > .kpop-column {
-    padding: 8px;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .kpop-column {
-    float: left;
-    width: 33.33%;
-    /* display: none; Hide columns by default */
-  }
-  
-  /* Clear floats after rows */
-  .kpop-row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Content */
-  .content {
-    background-color: white;
-    padding: 10px;
-  }
-  
-  /* The "show" class is added to the filtered elements */
-  .show {
-    display: block;
-  }
-  
-  /* Style the buttons */
-  .kpop-btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: white;
-    cursor: pointer;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .kpop-btn:hover {
-    background-color: #ddd;
-  }
-  
-  /* Add a dark background color to the active button */
-  .kpop-btn.btn-active {
-    background-color: #666;
-     color: white;
-  }
-
-
-
-
-  
-/* Position the image container (needed to position the left and right arrows) */
-.gridContainer {
-    position: relative;
-    width: 500px;
-    margin: inherit;
-  }
-  
-  /* Hide the images by default */
-  .gridSlides {
-    display: none;
-    width: 500px;
-    margin: inherit;
-    
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor3 {
-    cursor: pointer;
-    width: 500px;
-    margin: inherit;
-  }
-  
-  /* Next & previous buttons */
-  .gridPrev,
-  .gridNext {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 14px;
-    margin-top: -40px;
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .gridNext {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-
-    /* Position the "prev button" to the left */
-
-  .gridPrev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .gridPrev:hover,
-  .gridNext:hover {
-    background-color: deeppink;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numberGrid {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .gridCaptionContainer {
-    text-align: center;
-    background-color: deeppink;
-    padding: 1px 16px;
-    color: white;
-  }
-  
-  .kpop1-row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .kpop1-column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .kpop1-demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .kpop1-demo:hover {
-    opacity: 1;
-  }
-
-
-  .gridCaption {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-  
-
-  .gridCaption .gridMain-box {
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 2rem deeppink;
-    overflow: hidden;
-    display: flex;
-    width: 500px;
-    /* margin: inherit; */
-    text-align: center;
-    left: 40%;
-    /* transform: translate(-10%, -281%); */
-    
-  }
-
-  .gridSlides img {
-    width: 40%;
-  }
 
 /* footer */
 
@@ -828,81 +457,273 @@ section {
 
 /* breakpoint */
 
-@media (max-width: 1200px) {
-    html {
-        font-size: 55%;
-    }
+/* Media Query for max-width: 1200px */
+/* @media (max-width: 1200px) {
+  html {
+      font-size: 55%;
+  } */
+/* } */
+
+/* Media Query for max-width: 991px */
+/* @media (max-width: 991px) {
+  .header {
+      padding: 2rem 3%;
+  }
+
+  section {
+      padding: 10rem 3% 2rem;
+  }
+
+  .services {
+      padding-bottom: 7rem;
+  }
+
+  .footer {
+      padding: 2rem 3%;
+  }
+} */
+
+/* Media Query for max-width: 768px */
+/* @media (max-width: 768px) {
+  #menu-icon {
+      display: block;
+  }
+
+  .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: transparent;
+      border-top: 0.1rem solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(20px);
+      display: none;
+  }
+
+  .navbar.active {
+      display: block;
+  }
+
+  .navbar a {
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+  }
+
+  .Gallery {
+      flex-direction: column;
+  }
+
+  .gallery-content h3 {
+      font-size: 2.6rem;
+  }
+
+  .gallery-content h1 {
+      font-size: 5rem;
+  }
+} */
+
+/* testing */
+/* General slide styles */
+.slide-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Restrict maximum width */
+  margin: auto;
+  overflow: hidden;
 }
 
-@media (max-width: 991px) {
-    .header {
-        padding: 2rem 3%;
-    }
-
-    section {
-        padding: 10rem 3% 2rem;
-    }
-
-    .services {
-        padding-bottom: 7rem;
-    }
-
-    .footer {
-        padding: 2rem 3%;
-    }
+.slide-container img {
+  width: 100%; /* Ensure images scale to the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
 }
 
+/* Thumbnail styles */
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.thumbnail-container img {
+  width: 50px; /* Set a small size for thumbnails */
+  margin: 5px;
+  cursor: pointer;
+}
+
+.thumbnail-container img.active {
+  border: 2px solid #ff69b4; /* Highlight active thumbnail */
+}
+
+/* Caption */
+.caption {
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-container {
+      max-width: 90%; /* Reduce the container width on smaller screens */
+  }
+
+  .thumbnail-container img {
+      width: 40px; /* Reduce thumbnail size */
+  }
+
+  .caption {
+      font-size: 0.875rem; /* Reduce font size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slide-container {
+      max-width: 100%; /* Full width on very small screens */
+  }
+
+  .thumbnail-container img {
+      width: 30px; /* Further reduce thumbnail size */
+  }
+
+  .caption {
+      font-size: 0.75rem; /* Adjust font size for smaller devices */
+  }
+}
+
+
+
+
+.last-kawaii-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem; /* Optional: Adds some padding for smaller screens */
+}
+
+/* Add responsive styles for smaller screens */
 @media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: transparent;
-        border-top: .1rem solid rgba(255, 255, 255, .5);
-        box-shadow: 0 .5rem 1rem rgba(255, 255, 255, .5);
-        backdrop-filter: blur(20px);
-        display: none;
+  .last-kawaii-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: stretch; /* Make items take full width */
+  }
 
-    }
-
-    .navbar.active {
-        display: block;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    .Gallery {
-        flex-direction: column;
-    }
-
-    .gallery-content h3 {
-        font-size: 2.6rem;
-    }
-
-    .gallery-content h1 {
-        font-size: 5rem;
-    }
-
-    /* .about-img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
-
-    .sticky {
-        flex-direction: column-reverse;
-    }
-
-    .sticky img {
-        width: 70vw;
-        margin-top: 4rem;
-    } */
+  .last-kawaii-container .last-kawaii-box {
+      width: 90%; /* Take most of the screen width */
+      max-width: 400px; /* Optional: Cap the max width */
+      margin: 0 auto; /* Center the boxes */
+  }
 }
+
+/* For iPhone SE or smaller screens */
+@media (max-width: 375px) {
+  .last-kawaii-container .last-kawaii-box {
+      width: 100%; /* Full width */
+      box-shadow: 0 0 1rem deeppink; /* Slightly reduce shadow intensity */
+  }
+
+  .lastSlides img {
+      height: auto; /* Adjust image height automatically */
+      max-height: 500px; /* Optional: Cap the height */
+  }
+}
+
+
+
+
+
+
+/* General Mobile Devices (default for smaller screens) */
+
+@media only screen and (max-width: 767px) {
+  .header {
+      padding: 10px 5%;
+      font-size: 0.8rem;
+  }
+
+  .navbar a {
+      font-size: 14px;
+      margin-left: 20px;
+  }
+
+  .last-kawaii-container .last-kawaii-box {
+      width: 90%; /* Adjust to smaller width */
+      flex-direction: column;
+  }
+
+  .lastSlides img, .gridSlides img {
+      height: auto;
+      max-width: 100%; /* Ensure it fits in the viewport */
+  }
+
+  #menu-icon {
+      display: block; /* Display menu icon for navigation */
+  }
+
+  .navbar {
+      display: none; /* Hide the navbar by default */
+  }
+}
+
+/* iPhone SE (375px x 667px) */
+@media only screen and (max-width: 375px) {
+  .header {
+      padding: 5px 3%;
+  }
+
+  .logo {
+      font-size: 24px; /* Smaller logo */
+  }
+
+  .navbar a {
+      font-size: 12px; /* Reduce font size for smaller screens */
+  }
+
+  .last-kawaii-container .last-kawaii-box {
+      width: 100%;
+  }
+}
+
+/* iPhone 12 Pro and newer (390px x 844px) */
+@media only screen and (max-width: 390px) {
+  .header {
+      padding: 8px 3%;
+  }
+
+  .navbar a {
+      font-size: 14px;
+  }
+
+  .lastSlides img {
+      height: auto;
+      width: 100%;
+  }
+}
+
+/* Landscape mode adjustments */
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+  .header {
+      padding: 10px;
+  }
+
+  .logo {
+      font-size: 20px;
+  }
+
+  .navbar a {
+      font-size: 12px;
+      margin-left: 10px;
+  }
+
+  .last-kawaii-container {
+      flex-direction: row;
+      gap: 5px;
+  }
+}
+
+    

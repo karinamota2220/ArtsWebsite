@@ -37,6 +37,19 @@ function kuromiControlSelectSlide(n) {
     kuromiSlideIndex = slideController(kuromiSlideIndex = n, "kuromi-slide", "kuromi-thumbnail", "kuromi-caption");
 }
 
+// Create slides for last kawaii food
+let birthdayCakeSlideIndex = slideController(1, "birthday-cake-slide", "birthday-cake-thumbnail", "birthday-caption");
+
+// Next/previous controls
+function birthdayChangeSlide(n) {
+    birthdayCakeSlideIndex = slideController(birthdayCakeSlideIndex += n, "birthday-cake-slide", "birthday-cake-thumbnail", "birthday-caption");
+}
+
+// Thumbnail image controls
+function birthdayControlSelectSlide(n) {
+    birthdayCakeSlideIndex = slideController(birthdayCakeSlideIndex = n, "birthday-cake-slide", "birthday-cake-thumbnail", "birthday-caption");
+}
+
 function slideController(n, slidesDataAtr, thumbnailsDataAtr, captionClassName) {
     let i;
     let slideKawaiiIndex = 1;
@@ -81,26 +94,36 @@ menuIcon.onclick = () => {
 
 }
 
+// Initialize all slide sections
+document.querySelectorAll('.arts-gallery .lastSlides').forEach((slide) => {
+    // Initialization code
+});
+
+
 // sticky navbar
 
-let header = document.querySelector('header');
+// let header = document.querySelector('header');
 
-header.classList.toggle('sticky', window.scrollY > 100);
+// header.classList.toggle('sticky', window.scrollY > 100);
 
 
-// remove toggle and navbar when navbar link is clicked
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
+// // remove toggle and navbar when navbar link is clicked
+// menuIcon.classList.remove('bx-x');
+// navbar.classList.remove('active');
 
-// Create slides for arts-gallery
-let artsGallerySlideIndex = slideController(1, "arts-gallery", "arts-gallery-thumbnail", "arts-gallery-caption");
+// // Create slides for arts-gallery
+// let artsGallerySlideIndex = slideController(1, "arts-gallery", "arts-gallery-thumbnail", "arts-gallery-caption");
 
-// Next/previous controls
-function artsGalleryChangeSlide(n) {
-    artsGallerySlideIndex = slideController(artsGallerySlideIndex += n, "arts-gallery", "arts-gallery-thumbnail", "arts-gallery-caption");
-}
+// // Next/previous controls
+// function artsGalleryChangeSlide(n) {
+//     artsGallerySlideIndex = slideController(artsGallerySlideIndex += n, "arts-gallery", "arts-gallery-thumbnail", "arts-gallery-caption");
+// }
 
-// Thumbnail image controls
-function artsGalleryControlSelectSlide(n) {
-    artsGallerySlideIndex = slideController(artsGallerySlideIndex = n, "arts-gallery", "arts-gallery-thumbnail", "arts-gallery-caption");
-}
+// // Thumbnail image controls
+// function artsGalleryControlSelectSlide(n) {
+//     artsGallerySlideIndex = slideController(artsGallerySlideIndex = n, "arts-gallery", "arts-gallery-thumbnail", "arts-gallery-caption");
+// }
+
+
+  
+  
