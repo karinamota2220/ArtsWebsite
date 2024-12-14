@@ -6,6 +6,11 @@ menuIcon.addEventListener("click", function () {
     navbar.classList.toggle("active");
 });
 
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
  
  // Scroll sections active link 
 const sections = document.querySelectorAll('section');
@@ -37,6 +42,10 @@ window.addEventListener('scroll', () => {
 window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     header.classList.toggle("sticky", window.scrollY > 0);
+
+    // remove menu icon navbar when click navbar link (scroll)
+menuIcon.classList.remove('bx-x');
+navbar.classList.remove('active');
 });
 
 // Highlight Active Link
@@ -47,6 +56,12 @@ links.forEach(link => {
         this.classList.add("active");
     });
 });
+
+ // remove menu icon navbar when click navbar link (scroll)
+// menuIcon.classList.remove('bx-x');
+// navbar.classList.remove('active');
+
+
 
 
 // Swiper
