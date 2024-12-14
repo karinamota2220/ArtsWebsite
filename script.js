@@ -5,7 +5,7 @@ const navbar = document.querySelector(".navbar");
 // Toggle menu on click
 menuIcon.addEventListener("click", function () {
   menuIcon.classList.toggle("bx-x");
-  navbar.classList.toggle("active");
+  navbar.classList.toggle("active"); //testing 
 });
 
 // Sticky header on scroll
