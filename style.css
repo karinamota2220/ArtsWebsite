@@ -740,8 +740,8 @@ span {
     }
 
     .navbar.active {
-        display: block;
-
+        display: flex; /* Show the menu when active */
+        flex-direction: column;
     }
 
     .navbar a {

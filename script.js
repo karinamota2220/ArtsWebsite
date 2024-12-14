@@ -2,14 +2,17 @@
  const menuIcon = document.querySelector("#menu-icon");
 const navbar = document.querySelector(".navbar");
 
+// Toggle menu on click
 menuIcon.addEventListener("click", function () {
-    navbar.classList.toggle("active");
+  menuIcon.classList.toggle("bx-x");
+  navbar.classList.toggle("active");
 });
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-};
+// Sticky header on scroll
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
 
  
  // Scroll sections active link 
@@ -39,14 +42,17 @@ window.addEventListener('scroll', () => {
 });
 
 // Sticky navbar
-window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header");
-    header.classList.toggle("sticky", window.scrollY > 0);
+// window.addEventListener("scroll", function () {
+//     const header = document.querySelector(".header");
+//     header.classList.toggle("sticky", window.scrollY > 0);
 
-    // remove menu icon navbar when click navbar link (scroll)
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
-});
+//     // remove menu icon navbar when click navbar link (scroll)
+//     window.addEventListener("scroll", function () {
+//         menuIcon.classList.remove("bx-x");
+//         navbar.classList.remove("active");
+//       });
+      
+// });
 
 // Highlight Active Link
 const links = document.querySelectorAll(".navbar a");
