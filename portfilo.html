@@ -27,39 +27,142 @@
                     <a href="index.html" class="active">Home</a>
                     <a href="about.html">About</a>
                     <a href="event.html">Events</a>
-                    <a href="portfilo.html">Gallery</a>
+                    <div class="dropdown">
+                        <a href="portfolio.html">Gallery</a>
+                        <div class="sub-navbar">
+                            <a href="photos.html">Photos</a>
+                            <a href="videos.html">Videos</a>
+                            <a href="artwork.html">Artwork</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="services.html">Services</a>
+                        <div class="sub-navbar">
+                            <a href="photography.html">Photography</a>
+                            <a href="videography.html">Videography</a>
+                            <a href="illustration.html">Illustration</a>
+                            <a href="art.html">Art</a>
+                        </div>
+                    </div>
                     <a href="contact.html">Contact</a>
-
                 </nav>
             </header>
     </head>
 
     <body>
 
-        <section class="swiper1" id="swiper1">
-            <h2 class="heading">My <span>Services</span></h2>
-        <!-- Swiper -->
-      
-        <body>
-            <div class="gallery-container">
-                <div class="main-image">
-                    <img id="mainImage" src="images/Birthday-cake.jpg" alt="Main Image">
-                    <!-- Left and Right Arrows -->
-                    <div class="arrow left" onclick="changeImage('prev')">&#8592;</div>
-                    <div class="arrow right" onclick="changeImage('next')">&#8594;</div>
+        <section class="adventure-section">
+            <h2 class="section-title">Choose Your Adventure</h2>
+            <div class="adventure-container">
+                <div class="adventure-card">
+                    <img src="images/darkFantasy.png" alt="Dark Fantasy">
+                    <div class="card-content">
+                        <h3>Dark Fantasy</h3>
+                        <p>Explore the wonders of the great outdoors.</p>
+                        <a href="#nature-gallery" class="explore-btn">Explore</a>
+                    </div>
                 </div>
-                <div class="thumbnail-container">
-                    <img class="thumbnail" src="images/Birthday-cake.jpg" alt="Thumbnail 1" onclick="changeImage('images/Birthday-cake.jpg')">
-                    <img class="thumbnail" src="images/BirthdayGroup.jpg" alt="Thumbnail 2" onclick="changeImage('images/BirthdayGroup.jpg')">
-                    <img class="thumbnail" src="images/Birthday-4.jpg" alt="Thumbnail 3" onclick="changeImage('images/Birthday-4.jpg')">
-                    <img class="thumbnail" src="images/Birthday-45.jpg" alt="Thumbnail 4" onclick="changeImage('image4.jpg')">
+                <div class="adventure-card">
+                    <img src="images/aliceInPink2.png" alt="Portraits">
+                    <div class="card-content">
+                        <h3>Portraits</h3>
+                        <p>Discover vibrant city life through stunning visuals.</p>
+                        <a href="#city-gallery" class="explore-btn">Explore</a>
+                    </div>
+                </div>
+                <div class="adventure-card">
+                    <img src="images/SailorMurcary.png" alt="People Adventure">
+                    <div class="card-content">
+                        <h3>Cosplay</h3>
+                        <p>Meet captivating characters and moments.</p>
+                        <a href="#people-gallery" class="explore-btn">Explore</a>
+                    </div>
+                </div>
+                <div class="adventure-card">
+                    <img src="images/Birthday-3.jpg" alt="Abstract Adventure">
+                    <div class="card-content">
+                        <h3>Birthdays</h3>
+                        <p>Immerse yourself in creative and artistic visuals.</p>
+                        <a href="#abstract-gallery" class="explore-btn">Explore</a>
+                    </div>
                 </div>
             </div>
+        </section>
         
-            <script src="script.js"></script>
-        </body>
+
+    <section>
+        <div class="image-container">
+            <div class="image-item">
+                <img src="images/BriWithWings.png" alt="Image 1">
+                <div class="overlay">
+                    <h3>Image Title 1</h3>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="images/SkullyHuaCheng.png" alt="Image 2">
+                <div class="overlay">
+                    <h3>Image Title 2</h3>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="images/AliceWithCards.jpg" alt="Image 3">
+                <div class="overlay">
+                    <h3>Image Title 3</h3>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="images/someDude.png" alt="Image 3">
+                <div class="overlay">
+                    <h3>Image Title 3</h3>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="images/lightBulbAlice.png" alt="Image 3">
+                <div class="overlay">
+                    <h3>Image Title 3</h3>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="images/someOtherDude.png" alt="Image 3">
+                <div class="overlay">
+                    <h3>Image Title 3</h3>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="images/AmyGenshin.png" alt="Image 3">
+                <div class="overlay">
+                    <h3>Image Title 3</h3>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="images/someOtherDudeDude.png" alt="Image 3">
+                <div class="overlay">
+                    <h3>Image Title 3</h3>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="images/Rapunzel-6.jpg" alt="Image 3">
+                <div class="overlay">
+                    <h3>Image Title 3</h3>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="images/Neon.jpg" alt="Image 3">
+                <div class="overlay">
+                    <h3>Image Title 3</h3>
+                </div>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
         
+        <!-- Modal for image preview -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">×</span>
+            <img class="modal-content" id="modalImg">
+            <div id="caption"></div>
+        </div>
         
+
     </section>
     </body>
 
