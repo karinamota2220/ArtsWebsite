@@ -549,6 +549,8 @@ span {
     width: 100%;
     padding: 5rem 1rem;
     color: var(--text-color);
+    text-decoration: none; /* Removes the underline (optional) */
+
 }
 
 .testimonial-container .testimonial-wrapper {
