@@ -372,10 +372,6 @@ span {
     /* background: red; */
 }
 
-.about-img {
-    width: 40vw;
-}
-
 .heading {
     font-size: 4.5rem;
     text-align: center;
@@ -473,22 +469,22 @@ span {
 }
 
 .portfolio .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center; /* Centers the grid horizontally */
-    align-items: center;
+    align-items: stretch;
     gap: 0.5rem; /* Reduces the gap between items */
     padding: 1rem; /* Optional: Add padding for overall spacing */
 
 }
 
 .portfolio-container .portfolio-box {
-    position: relative;
-    width: 350px; /* Match the image width */
-    height: 350px; /* Match the image height */
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--double-hover-color);
-    overflow: hidden;
+    aspect-ratio: 1 / 1; /* Make each box a square */
+    width: 350px; /* Adjust width dynamically */
+    position: relative; /* Needed for image positioning */
+    overflow: hidden; /* Crop overflow content */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 1rem var(--shadow-color); /* Optional: Add shadow */
 }
 
 .portfolio-box img {
@@ -753,6 +749,10 @@ span {
         padding: 10rem 3% 2rem;
     }
 
+    .profession-container {
+        display: none !important;
+    }
+
     .home .profession-container .profession-box {
         right: -22rem;
     }
@@ -852,7 +852,6 @@ span {
     }
 
     .home {
-        padding: 0 3% 23rem;
         justify-content: center;
         text-align: center;
     }
@@ -975,10 +974,6 @@ span {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
-    }
-
-    .home {
-        padding: 0 3% 30rem;
     }
 
     .home .profession-box .profession:nth-child(1) {
