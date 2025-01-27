@@ -90,9 +90,9 @@ body {
 }
 
 /* Hover styles for navbar links */
-.navbar a:hover {
-    color: var(--shadow-color); /* Hover color */
-}
+/* .navbar a:hover {
+    color: var(--shadow-color); 
+} */
 
 /* Dropdown container */
 .dropdown {
@@ -190,7 +190,7 @@ section {
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
-    filter: drop-shadow(0 0 5px var(--shadow-color));
+    /* filter: drop-shadow(0 0 5px var(--shadow-color)); */
     display: none;
 }
 
@@ -549,6 +549,14 @@ span {
 /* Optional: Add hover styles for links */
 .portfolio-layer h4 a:hover {
     color: var(--hover-color); /* Replace with the desired hover color */
+}
+a {
+    color: inherit; /* Matches the color of the parent element */
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover for usability */
 }
 
 .testimonial-container {
